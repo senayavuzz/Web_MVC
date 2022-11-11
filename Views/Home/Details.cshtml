@@ -1,0 +1,83 @@
+﻿@using catalog.WebUI.Entity;
+@model Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="/theme/img/1.jpg" class="img-responsive w-100">
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>@Model.Name</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="badge bg-warning text-dark">In Stock</span>
+                <span class="product number">#234575</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="description">
+                    @Model.Description
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>  <!-- <i class="bi bi-star"></i> boş yıldız kodu -->
+                <span class="badge bg-success">67</span>
+            </div>
+            <div class="col-md-5">write a review</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="product-price">$@Model.Price</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-success">
+                    <i class="bi bi-basket-fill"></i> Add To Card
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row my-3">
+    <div class="col-md-12">
+        <div class="bd-example">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu" style="">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
